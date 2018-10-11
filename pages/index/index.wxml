@@ -6,7 +6,7 @@
       <image class='icon' src="https://www.zshot.xyz{{item.icon}}"></image>
       <view class='name_time'>
         <text>{{item.user_name}}</text>
-        <text>12356</text>
+        <text>{{tools.gettime(item.created_at)}}</text>
       </view>
     </view>
     <text>{{item.content}}</text>
