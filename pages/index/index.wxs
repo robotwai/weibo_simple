@@ -1,0 +1,21 @@
+var foo = "'hello world' from comm.wxs";
+var getimagesize = function (d) {
+  var s = d.substring(0,d.length-1).split(",");
+  console.log(s.length);
+  return s.length;
+}
+
+var getimagelist = function (d) {
+  var s = d.substring(0, d.length-1).split(",");
+  for(var i=0;i<s.length;i++){
+    s[i] = "https://www.zshot.xyz"+s[i];
+  }
+  
+    return s;
+  
+}
+module.exports = {
+  foo: foo,
+  getimagesize: getimagesize,
+  getimagelist: getimagelist
+};
