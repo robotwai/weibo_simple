@@ -16,7 +16,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    var that = this
+    wx.getStorage({
+      key: 'user_info',
+      success: function (res) {
+        console.log(res.data.name)
+        that.setData({
+          name: res.data.name,
+          icon: "https://www.zshot.xyz" + res.data.icon,
+          sign_content: res.data.sign_content,
+          followed: res.data.followed,
+          follower: res.data.follower,
+        })
+      },
+      // fail: function () {
+      //   wx.navigateTo({
+      //     url: '../login/login'
+      //   })
+      // }
+    })
   },
 
   /**

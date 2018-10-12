@@ -1,12 +1,12 @@
-function request(url, params, success, fail) {
-  this.requestLoading(url, params, "", success, fail)
+function request(url, method ,params, success, fail) {
+  this.requestLoading(url, method, params, "", success, fail)
 }
-function requestLoading(url, params, message, success, fail) {
+function requestLoading(url, meth,params, message, success, fail) {
   console.log(params)
   wx.showNavigationBarLoading()
   if (message != "") {
     wx.showLoading({
-      title: message,
+      title: message+"",
     })
   }
   wx.request({
@@ -16,7 +16,7 @@ function requestLoading(url, params, message, success, fail) {
       //'Content-Type': 'application/json'
       'content-type': 'application/x-www-form-urlencoded'
     },
-    method: 'GET',
+    method: meth,
     success: function (res) {
       //console.log(res.data)
       wx.hideNavigationBarLoading()

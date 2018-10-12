@@ -25,6 +25,7 @@
 .icon{
   width: 120rpx;
   height: 120rpx;
+  border-radius: 240rpx;
   margin-left: 24rpx;
 }
 .name{
