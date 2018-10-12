@@ -1,2 +1,23 @@
 <!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class='contain'>
+  <view class='title'>
+    <image class='icon' src="{{icon}}"></image>
+      <view class='name_sign'>
+        <text class='name'>{{name}}</text>
+        <text class='sign_content'>{{sign_content}}</text>
+      </view>
+  </view>
+  <view class='item_title'>
+    <image class='item_icon' src='../../image/following.png'></image>
+    <text class='follow'>正在关注的人{{followed}}</text>
+  </view>
+  <view class='item_title'>
+  <image class='item_icon' src='../../image/followers.png'></image>
+    <text class='follow'>关注你的人{{follower}}</text>
+  </view>
+  <view class='item_title'>
+  <image class='item_icon' src='../../image/setting.png'></image>
+    <text class='follow'>设置</text>
+  </view>
+
+</view>

@@ -2,7 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/me/me",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -23,7 +24,7 @@
         "text": "首页"
       },
       {
-        "pagePath": "pages/logs/logs",
+        "pagePath": "pages/me/me",
         "iconPath": "image/me_unselect.png",
         "selectedIconPath": "image/me_selected.png",
         "text": "我的"

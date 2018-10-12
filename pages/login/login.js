@@ -1,22 +1,18 @@
-// pages/me/me.js
+// pages/login/login.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    icon: "../../image/default_photo.png",
-    name: "xxx",
-    followed: 'xxx',
-    follower: 'xxx',
-    sign_content: '生命就是一场旅行'
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**

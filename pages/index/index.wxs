@@ -20,8 +20,8 @@ var gettime = function(test){
   var hour = test.substring(11, 13);
   var min = test.substring(14, 16);
   var s = test.substring(17, 19);
-  
-  return year+""+month+day;
+  return year + "年" + month + "月" + day + "日" + hour + "时"
+    + min + "分" + s + "秒" ;
 }
 module.exports = {
   foo: foo,

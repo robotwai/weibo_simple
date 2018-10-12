@@ -29,6 +29,20 @@
   flex-direction: column;
   margin-left: 20rpx;
 }
+.name{
+  font-size: 36rpx;
+  color: black
+}
+.time{
+  font-size: 30rpx;
+  color: gray;
+}
+.content{
+  font-size: 40rpx;
+  color: black;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
 .function_container{
     display:flex;
     flex-wrap: wrap;

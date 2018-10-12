@@ -30,8 +30,18 @@ Page({
     })
   },
   onPostClick: function(event){
-    wx.showToast({
-      title: '点击了加号',
+    wx.getStorage({
+      key: 'token',
+      success: function(res) {
+        wx.showToast({
+          title: 'you token',
+        })
+      },
+      fail: function(){
+        wx.navigateTo({
+          url: '../login/login?id=1'
+        })
+      }
     })
   },
   /**
