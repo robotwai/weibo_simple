@@ -2,10 +2,14 @@
 App({
   onLaunch: function () {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
+    
+    var that = this
+    wx.getStorage({
+      key: 'user_info',
+      success: function(res) {
+        that.globalData.token = res.data.token
+      },
+    })
 
     // 获取用户信息
     

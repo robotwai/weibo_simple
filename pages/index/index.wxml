@@ -25,7 +25,7 @@
         </view>
         <view wx:else>
 
-          <image class='function_img' src='{{tools.getimagelist(item.picture)[0]}}' bindtap='imgYu' data-list="{{tools.getimagelist(item.picture)}}" data-src='{{tools.getimagelist(item.picture)[0]}}' />
+          <image class='single_img' src='{{tools.getimagelist(item.picture)[0]}}' bindtap='imgYu' data-list="{{tools.getimagelist(item.picture)}}" data-src='{{tools.getimagelist(item.picture)[0]}}' />
         </view>
 
       </view>

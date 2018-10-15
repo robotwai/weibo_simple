@@ -65,6 +65,11 @@
     max-width: 180rpx;
     height:180rpx;
 }
+
+.single_img{
+    max-width: 280rpx;
+    max-height:280rpx;
+}
 .post {
     width: 180rpx;
     height: 180rpx;

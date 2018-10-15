@@ -1,0 +1,20 @@
+<!--pages/add/add.wxml-->
+<view class='container'>
+  <form bindsubmit="onsubmit">
+    <textarea placeholder="请输入内容" focus="{{focus}}" class='add_input' maxlength='140' style='border:none' name="textarea" />
+
+    <picker bindchange="onAddImage" value="{{index}}" range="{{array}}">
+      <block wx:if="{{image==null&&video==null}}">
+        <image src='../../image/add.png' class='add_image' mode='aspectFill' />
+      </block>
+      <block wx:if="{{image!=null}}">
+        <image src="{{image}}" class='add_image' mode='aspectFill' />
+      </block>
+      <block wx:if="{{video!=null}}">
+        <image src="{{video}}" class='add_image' mode='aspectFill' />
+      </block>
+    </picker>
+    <button form-type="submit"> 提交 </button>
+  </form>
+
+</view>

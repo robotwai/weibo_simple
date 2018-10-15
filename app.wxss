@@ -26,16 +26,15 @@
 
 .icon-add:before { 
   content: "\e601";
-    
-    float: right;
-    background-color: #ffffff33;
-    position: fixed;
-    bottom: 20px;
-    right: 10px;  
-    border: 0 solid #ffffffa2;
-    border-radius: 200rpx;
-    box-shadow: 1px 1px 1px 1px #cccccc;
-    padding: 20rpx;
+  float: right;
+  background-color: #ffffffff;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;  
+  border: 0 solid #ffffffa2;
+  border-radius: 200rpx;
+  box-shadow: 1px 1px 1px 1px #cccccc;
+  padding: 20rpx;
  }
 
 .icon-default:before { content: "\e60f"; }
